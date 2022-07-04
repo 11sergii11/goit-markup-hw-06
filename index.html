@@ -464,6 +464,32 @@
             <use href="./images/symbol-defs.svg#icon-xx"></use>
           </svg>
         </button>
+
+        <form action="#" class="modal-form" data-netlify="true" id="form">
+          <p class="modal-form-deskr">Оставьте свои данные, мы вам перезвоним</p>
+           <div class="modal-form-fild">
+             <label for="" class="modal-field-name">Имя</label>
+             <input required type="text" class="modal-field-input" id="user-name" name="Имя">
+           </div>
+           <div class="modal-form-fild">
+              <label for="" class="modal-field-name">Телефон</label>
+              <input required type="text" class="modal-field-input" id="user-telefon" name="Телефон">
+           </div>
+           <div class="modal-form-fild">
+             <label for="" class="modal-field-name">Почта</label>
+             <input required type="email" class="modal-field-input" id="user-email"name="email">
+           </div>
+           <label>
+            Комментарий
+            <textarea name="Комментарий" rows="5" placeholder="Введите текст..."></textarea>
+          </label>
+           <label>
+            <input type="checkbox" name="contract" value="reading" />
+            Соглашаюсь с рассылкой и принимаю <span>Условия договора</span>
+          </label>
+           <button class="model-form-button" id="launch-btn">Oтправить</button>
+       </form>
+
       </div>
     </div>
 
