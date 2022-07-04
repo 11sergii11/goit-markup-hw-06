@@ -572,6 +572,7 @@ a {
   display: flex;
   align-items: flex-end;
   margin-left: 12px;
+  cursor: pointer;
 }
 .button-send {
   padding: 0;
@@ -598,6 +599,7 @@ a {
 .button-icon-send {
   margin-right: 29px;
   margin-left: 10px;
+  cursor: pointer;
 }
 .button-send:hover,
 .button-send:focus {
