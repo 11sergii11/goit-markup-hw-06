@@ -539,35 +539,67 @@ a {
 .footer-icon {
   fill: currentColor;
 }
+
 /* --Подписка на рассылку-- */
 
-.form-field {
-  position: relative;
+.footer-form {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 28px;
+  margin-left: 93px;
+}
+.form-field {
+  background: var(--text-main-color);
   user-select: none;
 }
 .input {
-  height: 40px;
-  max-width: 100%;
-  padding: 11px;
-
+  height: 50px;
+  width: 358px;
+  padding: 15px;
   letter-spacing: 0.03em;
+  background: var(--text-main-color);
   color: var(---main-btn-color);
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
   transition-property: border-color;
-  transition-duration: var(--transition-base-time);
-  transition-timing-function: var(--transition-base-animation);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-large {
+.input:hover{
+  border-color: ;
+}
+.btn-send {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 12px;
+}
+.button-send {
+  padding: 0;
+  width: 200px;
   height: 50px;
-  padding: 15px;
-
+  font-weight: 700;
   font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  background-color: var(--main-brand-color);
+  color: var(--main-body-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-icon-send {
+  margin-right: 29px;
+  margin-left: 10px;
+}
+.button-send:hover, .button-send:focus{
+  background-color: var(--buttom-second-color);
 }
 
 /* Кнопки портфолио */
@@ -610,7 +642,7 @@ a {
   color: var(--main-body-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
+}
 
 .job-list {
   position: relative;
@@ -624,7 +656,7 @@ a {
   margin-left: var(--card-projects-gap);
   margin-top: var(--card-projects-gap);
 }
-.projekt-link{
+.projekt-link {
   display: block;
 }
 .projekt-link:hover,
@@ -633,7 +665,8 @@ a {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projekt-link:hover .projekt-text, .projekt-link:focus .projekt-text {
+.projekt-link:hover .projekt-text,
+.projekt-link:focus .projekt-text {
   transform: translateY(0);
 }
 .projekt-img {
@@ -731,7 +764,8 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn:hover, .modal-close-btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   cursor: pointer;
   fill: var(--buttom-second-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
