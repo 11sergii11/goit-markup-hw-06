@@ -804,7 +804,7 @@ a {
   flex-direction: column;
   margin-bottom: 0px;
 }
-.modal-field-coments{
+.modal-field-coments {
   resize: none;
   /* width: 448px; */
   height: 120px;
@@ -816,9 +816,10 @@ a {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: rgba(117, 117, 117, 0.5);;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-field-name {
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -844,10 +845,17 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-field-input:hover, .modal-field-input:focus{
-  border-color:var(--main-brand-color) ;
-  }
-.modal-field-kontract {
+.modal-field-input:hover,
+.modal-field-input:focus {
+  border-color: var(--main-brand-color);
+}
+.form-icon{
+  fill: inherit;
+  position: absolute;
+  top: 32px;
+  left: 12px;
+}
+.modal-field-contract {
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
