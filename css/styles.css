@@ -822,7 +822,7 @@ a {
   border-radius: 4px;
   box-sizing: border-box;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: rgba(117, 117, 117, 0.5);
   transition-property: border-color, fill;
@@ -877,6 +877,8 @@ a {
   border-color: var(--main-brand-color);
 }
 .modal-field-contract {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   font-weight: 400;
   font-size: 14px;
@@ -885,6 +887,9 @@ a {
   color: var(--text-sekond-color);
   }
 .checkbox{
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
   cursor: pointer;
 }
 .contract {
@@ -894,6 +899,7 @@ a {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
+  cursor: pointer;
 }
 .model-form-button {
   display: flex;
