@@ -568,7 +568,9 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input:hover {
+.input:hover,
+.input:focus-within {
+  outline: none;
   border-color: var(--buttom-second-color);
 }
 .btn-send {
@@ -782,6 +784,7 @@ a {
   opacity: 0;
   pointer-events: none;
 }
+/* --- MODAL FORMS --- */
 
 .modal-form {
   display: flex;
@@ -805,7 +808,7 @@ a {
 }
 .modal-form-coments {
   width: 448px;
-  height: 120px;
+  height: 138px;
   display: flex;
   flex-direction: column;
   margin-bottom: 0px;
@@ -822,6 +825,9 @@ a {
   font-size: 12px;
   line-height: 1.5;
   color: rgba(117, 117, 117, 0.5);
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-name {
   position: relative;
@@ -830,6 +836,9 @@ a {
   line-height: 1.17;
   color: var(--text-sekond-color);
   margin-bottom: 4px;
+  /* transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-field-input {
@@ -844,20 +853,28 @@ a {
   line-height: 1.5;
   color: var(--text-sekond-color);
   padding: 14px 42px;
-  transition-property: border-color;
+  transition-property: border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-field-input:hover,
-.modal-field-input:focus {
-  border-color: var(--main-brand-color);
 }
 .form-icon {
   fill: inherit;
   position: absolute;
   top: 32px;
   left: 14px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-icon:hover ,
+.form-icon:focus-within ,
+.modal-field-input:hover,
+.modal-field-input:focus-within,
+.modal-field-coments:hover,
+.modal-field-coments:focus-within {
+  outline: none;
+  fill: var(--main-brand-color);
+  border-color: var(--main-brand-color);
 }
 .modal-field-contract {
   margin-top: 20px;
@@ -866,6 +883,9 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
+  }
+.checkbox{
+  cursor: pointer;
 }
 .contract {
   font-weight: 400;
@@ -889,11 +909,14 @@ a {
   cursor: pointer;
   border: 0;
   margin-top: 30px;
-  transition-property: background-color;
+  
+  transition-property: background color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .model-form-button:hover,
 .model-form-button:focus {
   background: var(--buttom-second-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
