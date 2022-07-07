@@ -872,8 +872,10 @@ a {
 .modal-field-input:focus-within .form-icon,
 .modal-field-input:hover .form-icon {
   fill: var(--main-brand-color);
-  border-color: var(--main-brand-color);
+  /*-border-color: var(--main-brand-color);-*/
 }
+.modal-field-input:focus-within, 
+.modal-field-input:hover, 
 .modal-field-coments:hover,
 .modal-field-coments:focus-within {
   border-color: var(--main-brand-color);
