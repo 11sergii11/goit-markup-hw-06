@@ -638,9 +638,9 @@ a {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: var(--sekond-brand-color);
-  background: var(--background-second-color);
-  transition-property: background-color;
+  /* color: var(--sekond-brand-color); */
+  background-color: var(--background-second-color);
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
