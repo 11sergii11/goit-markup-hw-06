@@ -464,35 +464,27 @@
 
         <form action="#" class="modal-form" data-netlify="true" id="form">
           <p class="modal-form-deskr">Оставьте свои данные, мы вам перезвоним</p>
+
            <div class="modal-form-fild">
-             <label for="text" class="modal-field-name">Имя
-               <span>
+             <label for="text" class="modal-field-name">Имя</label>
+                 <input required type="text" class="modal-field-input" id="user-name" name="Имя">   
                  <svg class="form-icon" width="12" height="12">
                    <use href="./images/symbol-defs.svg#icon-man"></use>
                  </svg>
-                </span>
-             </label>
-             <input required type="text" class="modal-field-input" id="user-name" name="Имя">
            </div>
            <div class="modal-form-fild">
-              <label for="tel" class="modal-field-name">Телефон
-                <span>
+              <label for="tel" class="modal-field-name">Телефон</label>
+               <input required type="tel" class="modal-field-input" id="user-telefon" name="Телефон">
                   <svg class="form-icon" width="12" height="12">
                     <use href="./images/symbol-defs.svg#icon-fone"></use>
                   </svg>
-                 </span>
-              </label>
-              <input required type="tel" class="modal-field-input" id="user-telefon" name="Телефон">
            </div>
            <div class="modal-form-fild">
-             <label for="email" class="modal-field-name">Почта
-               <span>
+             <label for="email" class="modal-field-name">Почта</label>
+              <input required type="email" class="modal-field-input" id="user-email"name="email">
                  <svg class="form-icon" width="15" height="12">
                    <use href="./images/symbol-defs.svg#icon-mail-to"></use>
                  </svg>
-               </span>
-             </label>
-             <input required type="email" class="modal-field-input" id="user-email"name="email">
            </div>
            <div class="modal-form-coments">
               <label for="comment" class="modal-field-name">Комментарий</label>
@@ -500,9 +492,9 @@
            </div>
            <label class="modal-field-contract">
             <input class="checkbox" type="checkbox" name="contract" value="reading" />
-            Соглашаюсь с рассылкой и принимаю <span class="contract">Условия договора</span>
+            Соглашаюсь с рассылкой и принимаю  <span class="contract">Условия договора</span>
           </label>
-           <button class="model-form-button" id="launch-btn">Oтправить</button>
+           <button class="model-form-button" id="launch-btn" type="submit">Oтправить</button>
        </form>
 
       </div>
