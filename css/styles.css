@@ -845,8 +845,11 @@ a {
   color: var(--text-sekond-color);
   margin-bottom: 4px;
 }
-
+.input-wrap{
+  position: relative;
+}
 .modal-field-input {
+  width: 100%;
   margin: 0;
   outline: none;
   background: var(--main-body-color);
@@ -866,7 +869,7 @@ a {
 .form-icon {
   fill: var(--text-main-color);
   position: absolute;
-  top: 32px;
+  top: 14px;
   left: 14px;
   transition-property: fill;
   transition-duration: 250ms;
