@@ -850,6 +850,7 @@ a {
 }
 .modal-field-input {
   width: 100%;
+  width: 100%;
   margin: 0;
   outline: none;
   background: var(--main-body-color);
