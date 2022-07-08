@@ -847,10 +847,10 @@ a {
 }
 .input-wrap{
   position: relative;
+  width: 448px;
 }
 .modal-field-input {
-  width: 100%;
-  width: 100%;
+  width: 448px;
   margin: 0;
   outline: none;
   background: var(--main-body-color);
